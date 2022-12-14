@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.button-call{
+	color: #29ABE2;
+	border: 2px solid #29ABE2;
+	border-radius: 26px;
+}
+
+.phone{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: black;
+}
+
+.menu{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #272727;
+}

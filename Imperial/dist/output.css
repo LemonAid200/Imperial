@@ -513,9 +513,43 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.float-right {
+  float: right;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -526,12 +560,29 @@ video {
   display: none;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-24 {
   height: 6rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .h-4 {
   height: 1rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-12 {
@@ -542,17 +593,25 @@ video {
   width: 1rem;
 }
 
-.min-w-min {
-  min-width: -moz-min-content;
-  min-width: min-content;
+.max-w-md {
+  max-width: 28rem;
 }
 
-.min-w-\[640px\] {
-  min-width: 640px;
+.max-w-lg {
+  max-width: 32rem;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -565,18 +624,73 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 119%;
+}
+
+p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@media (min-width: 1024px) {
+  .lg\:wrapper{
+    min-height: 900px;
+    background-image: url(../public/sleeping-lady.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .lg\:title-1{
+    max-width: 40rem;
+  }
+}
+
+.menu-button{
+  background-image: url(../public/icons8-menu-rounded-100.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .button-call{
   color: #29ABE2;
   border: 2px solid #29ABE2;
   border-radius: 26px;
+}
+
+.choose-mattress-button{
+  background-color: #29ABE2;
+  height: 52px;
+  border-radius: 26px;
+  box-shadow: 0 14px 21px -11px #29abe2;
 }
 
 .phone{
@@ -597,16 +711,25 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:float-left {
+    float: left;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .md\:grid {
     display: grid;
   }
 
-  .md\:h-28 {
-    height: 7rem;
+  .md\:hidden {
+    display: none;
   }
 
-  .md\:w-28 {
-    width: 7rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -619,5 +742,11 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
   }
 }

@@ -2,12 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+h1{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 119%;
+}
 
+p{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+
+
+@media (min-width: 1024px) {
+  .lg\:wrapper{
+		min-height: 900px;
+		background-image: url(../public/sleeping-lady.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.lg\:title-1{
+		max-width: 40rem;
+	}
+}
+
+.menu-button{
+	background-image: url(../public/icons8-menu-rounded-100.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
 
 .button-call{
 	color: #29ABE2;
 	border: 2px solid #29ABE2;
 	border-radius: 26px;
+}
+
+.choose-mattress-button{
+	background-color: #29ABE2;
+	height: 52px;
+	border-radius: 26px;
+	box-shadow: 0 14px 21px -11px #29abe2;
 }
 
 .phone{

@@ -529,6 +529,10 @@ video {
   left: 0px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
 .float-right {
   float: right;
 }
@@ -558,6 +562,11 @@ video {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -572,10 +581,6 @@ video {
 
 .mt-11 {
   margin-top: 2.75rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .mt-24 {
@@ -594,8 +599,20 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -627,6 +644,10 @@ video {
   height: 0.25rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -643,8 +664,8 @@ video {
   width: 4rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-48 {
+  width: 12rem;
 }
 
 .max-w-md {
@@ -668,6 +689,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -701,6 +726,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -710,12 +745,39 @@ video {
   padding-right: 0.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
 
-.pl-20 {
-  padding-left: 5rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -732,9 +794,26 @@ video {
   line-height: 1.25rem;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+html{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body
+{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1{
@@ -841,12 +920,22 @@ p{
   border-radius: 26px;
 }
 
+.mattress-covers-button:hover{
+  color: white;
+  background: #29ABE2;
+}
+
 .children-mattresses-button{
   width: 189px;
   height: 52px;
   color: #29ABE2;
   border: 2px solid #29ABE2;
   border-radius: 26px;
+}
+
+.children-mattresses-button:hover{
+  color: white;
+  background: #29ABE2;
 }
 
 .wrapper-3{
@@ -857,13 +946,111 @@ p{
   max-width: 600px;
 }
 
+.wrapper-3-line{
+  background: #29ABE2;
+}
+
+.categories{
+  position: relative;
+}
+
+.categories::before{
+  content: 'Выберите категорию:';
+  position: absolute;
+  white-space: nowrap;
+  top:-24px
+}
+
+.custom-select{
+  background: #29ABE2;
+  border: 0 solid #29ABE2;
+  width: 178px;
+  height: 52px;
+  color: white;
+  border-radius: 26px;
+  text-align: left;
+  padding-left: 28px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../public/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 143px 23px;
+}
+
+.custom-select option{
+  background: white;
+  color: black;
+}
+
+.mattress-type{
+  width: 280px;
+  height: 500px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.mattress-type h2{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.order-button{
+  background: white;
+  color: #29ABE2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.mattress-description-composition{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9F9F9F;
+}
+
+.custom-select-mattress-size{
+  width: 138px;
+  height: 30px;
+  border: 2px solid 29ABE2;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #29ABE2;
+  margin-left: 28px;
+}
+
+.mattress-info p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
 @media (min-width: 768px) {
   .md\:float-left {
     float: left;
   }
 
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .md\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:grid {
@@ -872,6 +1059,28 @@ p{
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:pl-20 {
+    padding-left: 5rem;
   }
 
   .md\:text-6xl {
@@ -885,6 +1094,10 @@ p{
     display: flex;
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -895,5 +1108,15 @@ p{
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:ml-56 {
+    margin-left: 14rem;
+  }
+
+  .\32xl\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 }

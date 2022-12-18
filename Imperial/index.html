@@ -9,9 +9,9 @@
 </head>
 <body>
 	<div class="wrapper-main w-screen h-fit">
-		<div class="h-fit lg:wrapper-1">
-			<header class="flex mx-6  h-24 items-center" style="justify-content: space-between;">
-				<img class="h-28 w-28 mt-1" src="public/Group.svg" alt="">
+		<div class="wrapper-1 h-fit lg:wrapper-1">
+			<header class="head flex mx-6  h-24 items-center" style="justify-content: space-between;">
+				<img class="h-28 w-28 mt-1" src="public/icons/Group.svg" alt="">
 				<div class="menu">
 					<button class="menu-button w-12 h-12 md:hidden"></button>
 					<ul class=" hidden text-center md:grid grid-cols-4  lg:flex lg:space-x-2">
@@ -26,7 +26,7 @@
 					</ul>
 				</div>
 				<div class="phone flex space-x-2 ">
-					<img class="w-4 h-4"	src="public/Phone.svg" alt="phone">
+					<img class="w-4 h-4"	src="public/icons/Phone.svg" alt="phone">
 					<a href="tel:2296666">229-66-66</a>
 				</div>
 				<button class="p-2 button-call hidden xl:block">
@@ -38,7 +38,7 @@
 				<p class="max-w-lg my-5">Подберите для себя матрас индивидуально по выгодной цене и дизайну на нашем онлайн-конструкторе прямо сейчас!</p>
 				<button class="choose-mattress-button  max-w-fit float-right px-2
 				 text-white mt-11 md:mt-5 md:float-left">Подобрать матрас</button>
-				<button class="mouse-iconed-button my-20 flex"> <img src="public/mouse.svg" alt=""><span class="ml-3">Подробнее</span></button>
+				<button class="mouse-iconed-button my-20 flex"> <img src="public/icons/mouse.svg" alt=""><span class="ml-3">Подробнее</span></button>
 			</div>
 	
 		</div>
@@ -53,29 +53,29 @@
 			</div>
 			<div class="flex flex-wrap items-center justify-between mx-24 mt-24">
 				<div class="perk mt-4 mx-auto">
-					<img class="mx-auto" src="public/eco-house.svg" alt="">
+					<img class="mx-auto" src="public/icons/eco-house.svg" alt="">
 					<h3 class="mt-3">Экологичность</h3>
 					<p>Произведено в Сибири по честной цене</p>
 				</div>
 				<div class="perk mt-4 mx-auto">
-					<img class="mx-auto" src="public/dimond.svg" alt="">
+					<img class="mx-auto" src="public/icons/dimond.svg" alt="">
 					<h3 class="mt-3">Качество</h3>
 					<p>Лучшие комплектующие из России и мира</p>
 				</div>			
 				<div class="perk  mt-4 mx-auto">
-					<img class="mx-auto" src="public/bed.svg" alt="">
+					<img class="mx-auto" src="public/icons/bed.svg" alt="">
 					<h3 class="mt-6">Любая сложность</h3>
 					<p>Любые размеры и форма за 3 дня</p>
 				</div>			
 				<div class="perk mt-4 mx-auto">
-					<img class="mx-auto" src="public/shield.svg" alt="">
+					<img class="mx-auto" src="public/icons/shield.svg" alt="">
 					<h3 class="mt-3">Гарантия</h3>
 					<p>Гарантия до 18 месяцев Срок службы до 15 лет</p>
 				</div>			
 			</div>
 		</div>
 	
-		<div class="wrapper-3 bg-green-400">
+		<div class="wrapper-3">
 			<div class="flex flex-wrap items-center md:items-start">
 				<div class="wrapper-3-intro mt-3 mb-6 relative flex md:ml-20 md:pl-20 items-center">
 					<div class="wrapper-3-line absolute left-2 top-7 w-12 h-1 rounded-sm hidden md:block"></div>
@@ -98,8 +98,10 @@
 					<button class="children-mattresses-button  mx-auto my-3">Детские матрасы</button>
 				</div>
 			</div>
-			<div class="mattress-types grid grid-cols-1 md:mx-20 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-8">
-				<div class="mattress-type bg-blue-700">
+
+
+			<div class="mattress-types flex flex-wrap items-center justify-center space-x-2 md:mx-20 ">
+				<div class="mattress-type">
 					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
 					<div class="mattress-type-info pl-5">
 						<h2>Турин-1</h2>
@@ -122,21 +124,203 @@
 							<button class="order-button mt-5">Заказать товар</button>
 					</div>
 				</div>
-
-				<div class="mattress-type"></div>
-				<div class="mattress-type"></div>
-				<div class="mattress-type"></div>
-				<div class="mattress-type"></div>
-				<div class="mattress-type"></div>
-				<div class="mattress-type"></div>
-				<div class="mattress-type"></div>
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>				
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>				
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>				
+				<div class="mattress-type">
+					<img src="public/mattresses/turin-1 1.png" alt="mattress turin-1">
+					<div class="mattress-type-info pl-5">
+						<h2>Турин-1</h2>
+						<div class="mattress-description-composition mt-4">Состав:</div>
+						<div class="mattress-info pb-14">
+							<p>Кокосовая койра - 2 см.</p>
+							<p>Войлок термоскрепленный - 0,5 см.</p>
+							<p>Кокосовая койра - 2 см. </p>
+							<p>Высота матраца - 16 см. </p>
+							<p>Для людей весом до 120 кг.</p>
+						</div>
+							<div class="flex">
+								<h2>13500р.</h2>
+								<select class="custom-select-mattress-size" name="" id="">
+									<option value="">200x200</option>
+									<option value="">100x150</option>
+									<option value="">300x400</option>
+								</select>
+							</div>
+							<button class="order-button mt-5">Заказать товар</button>
+					</div>
+				</div>
 			</div>
+
+
 			<div class="wrapper-3-button-wrapper flex items-center pt-10 pb-20">
 				<button class="show-all-types-button px-2 w-48 mx-auto">Показать все варианты</button>
-
 			</div>
 	
-		</div>		
+		</div>
+
+		<div class="wrapper-4 min-h-fit bg-slate-600">
+			<div class="wrapper-3-intro mt-3 mb-6 relative flex md:ml-20 md:pl-20 items-center">
+				<div class="wrapper-3-line absolute left-2 top-7 w-12 h-1 rounded-sm hidden md:block"></div>
+				<div class="wrapper-3-title px-3">
+					<h2>Онлайн-конструктор матрасов</h2>
+					<p>С помощью представленного ниже конструктора матрасов Вы легко сможете изменить состав стандартной модели матраса или сконструировать индивидуальную модель матраса.</p>
+				</div>
+			</div>
+			<div class="wrapper-3-main max-w-6xl lg:mx-auto">
+				<div class="wrapper-3-buttons">
+					<button class="wrapper-3-standart-button">Стандартный</button>
+					<button class="wrapper-3-sizing-button">Заказной размер</button>
+					<button class="wrapper-3-howitworks-button float-right">Как это работает</button>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="wrapper-5">
+			<div class="wrapper-3-intro mt-3 mb-6 relative flex md:ml-20 md:pl-20 items-center">
+				<div class="wrapper-3-line absolute left-2 top-7 w-12 h-1 rounded-sm hidden md:block"></div>
+				<div class="wrapper-3-title px-3">
+					<h2>Честные условия покупки</h2>
+					<p>Мы радуем своих клиентов приятными подарками и отличными условиями обслуживания</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>

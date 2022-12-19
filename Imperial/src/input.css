@@ -146,7 +146,7 @@ p{
 	background: #FAFCFF;
 }
 
-.wrapper-3-intro{
+.text-intro{
 	max-width: 600px;
 }
 
@@ -193,6 +193,7 @@ p{
 	line-height: 16px;
 	border: 1px solid #F9F9F9;
 	box-shadow: 0px 2px 9px rgba(41, 171, 226, 0.12);
+	margin: 16px 16px;
 }
 
 .mattress-type h2{
@@ -247,4 +248,64 @@ p{
 
 .wrapper-5{
 	background: 	rgba(250, 250, 250, 1);
+}
+
+.wrapper-4-standart-button{
+	background: #29ABE2;
+	/* background: red; */
+	width: 180px;
+	height: 50px;
+	position: relative;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+
+.wrapper-3-howitworks-button{
+	border-bottom: 2px dashed #29ABE2;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 150%;
+	color: #353535;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
+.wrapper-4-standart-button::after{
+	position: absolute;
+	left: 50%;
+	bottom: -13px;
+	content: url(../public/icons/arrow-down-blue-filled.svg);
+}
+
+.wrapper-4-sizing-button{
+	background: #EAEBEB;
+	width: 199px;
+	height: 50px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 150%;
+	color: #676767;
+}
+
+.mattress-constructor{
+	border: 2px solid #F2F2F2;
+}
+
+.custom-select-size-constructor{
+	background: white;
+	border: 0 solid #29ABE2;
+	width: 106px;
+	height: 30px;
+	border-radius: 26px;
+	text-align: left;
+	padding-left: 28px;
+	appearance: none;
+	background-image: url(../public/icons/select-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: 143px 23px;
 }

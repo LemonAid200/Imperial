@@ -2,12 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body
+{
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 h1{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 119%;
 }
+
+h2{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 150%;
+}
+
 
 p{
 	font-style: normal;
@@ -19,11 +40,13 @@ p{
 
 
 @media (min-width: 1024px) {
-  .lg\:wrapper{
+  .lg\:wrapper-1{
 		min-height: 900px;
-		background-image: url(../public/sleeping-lady.png);
+		background-image: url(../public/backgrounds/sleeping-lady.png);
 		background-repeat: no-repeat;
-		background-size: 100%;
+		/* background-size: 100%; */
+		background-position: center center;
+  	background-size: cover;
 	}
 
 	.lg\:title-1{
@@ -32,7 +55,7 @@ p{
 }
 
 .menu-button{
-	background-image: url(../public/icons8-menu-rounded-100.png);
+	background-image: url(../public/icons/icons8-menu-rounded-100.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -50,6 +73,19 @@ p{
 	box-shadow: 0 14px 21px -11px #29abe2;
 }
 
+.show-all-types-button{
+	background-color: #29ABE2;
+	width:200px;
+	color: white;
+	height: 52px;
+	border-radius: 26px;
+	box-shadow: 0 14px 21px -11px #29abe2;
+}
+
+.mouse-iconed-button{
+	color: #29ABE2;
+}
+
 .phone{
 	font-size: 16px;
 	font-weight: 500;
@@ -65,4 +101,237 @@ p{
 	font-size: 14px;
 	line-height: 17px;
 	color: #272727;
+}
+
+.wrapper-2{
+	min-height: 480px;
+	background: #29ABE2;
+}
+
+.perk{
+	max-width: 219px;
+	text-align: center;
+	align-items: center;
+
+}
+
+.mattress-covers-button{
+	width: 178px;
+	height: 52px;
+	color: #29ABE2;
+	border: 2px solid #29ABE2;
+	border-radius: 26px;
+}
+
+.mattress-covers-button:hover{
+	color: white;
+	background: #29ABE2;
+}
+
+.children-mattresses-button{
+	width: 189px;
+	height: 52px;
+	color: #29ABE2;
+	border: 2px solid #29ABE2;
+	border-radius: 26px;
+}
+
+.children-mattresses-button:hover{
+	color: white;
+	background: #29ABE2;
+}
+
+.wrapper-3{
+	padding-top: 30px;
+	background: #FAFCFF;
+}
+
+.text-intro{
+	max-width: 600px;
+}
+
+.wrapper-3-line{
+	background: #29ABE2;
+}
+.categories{
+ position: relative;
+}
+
+.categories::before{
+	content: 'Выберите категорию:';
+	position: absolute;
+	white-space: nowrap;
+	top:-24px
+}
+
+.custom-select{
+	background: #29ABE2;
+	border: 0 solid #29ABE2;
+	width: 178px;
+	height: 52px;
+	color: white;
+	border-radius: 26px;
+	text-align: left;
+	padding-left: 28px;
+	appearance: none;
+	background-image: url(../public/icons/select-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: 143px 23px;
+}
+
+.custom-select option{
+	background: white;
+	color: black;
+}
+
+.mattress-type{
+	width: 280px;
+	height: 500px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	border: 1px solid #F9F9F9;
+	box-shadow: 0px 2px 9px rgba(41, 171, 226, 0.12);
+	margin: 16px 16px;
+}
+
+.mattress-type h2{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.order-button{
+	background: white;
+	color: #29ABE2;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	width: 239px;
+	line-height: 18px;
+	text-align: left;
+	background-image: url(../public/icons/order-button-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: 228px 3px;
+}
+
+.mattress-description-composition{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+
+	color: #9F9F9F;
+}
+
+.custom-select-mattress-size{
+	width: 138px;
+	height: 30px;
+	border: 2px solid 29ABE2;
+	border-radius: 15px;
+	text-align: center;
+	border: 2px solid #29ABE2;
+	margin-left: 28px;
+}
+
+
+.mattress-info p {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.mattress-types{
+	margin: 10px auto;
+}
+
+.wrapper-5{
+	background: 	rgba(250, 250, 250, 1);
+}
+
+.wrapper-4-standart-button{
+	background: #29ABE2;
+	/* background: red; */
+	width: 180px;
+	height: 50px;
+	position: relative;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+
+.wrapper-3-howitworks-button{
+	border-bottom: 2px dashed #29ABE2;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 150%;
+	color: #353535;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
+.wrapper-4-standart-button::after{
+	position: absolute;
+	left: 50%;
+	bottom: -13px;
+	content: url(../public/icons/arrow-down-blue-filled.svg);
+}
+
+.wrapper-4-sizing-button{
+	background: #EAEBEB;
+	width: 199px;
+	height: 50px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 150%;
+	color: #676767;
+}
+
+.mattress-constructor{
+	border: 2px solid #F2F2F2;
+}
+
+.custom-select-size-constructor{
+	background: white;
+	border: 0 solid #29ABE2;
+	width: 106px;
+	height: 30px;
+	border-radius: 26px;
+	text-align: left;
+	padding-left: 28px;
+	appearance: none;
+	background-image: url(../public/icons/select-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: 143px 23px;
+}
+
+.mattress-constructor-added-layer{
+	width: 452px;
+	height: 38px;
+}
+
+.w4-constructor-wrapper{
+	min-height: 480px;
+}
+
+.constructor-move-button{
+	width: 38px;
+	height: 38px;
+	background-image: url(../public/icons/move-button.svg);
+}
+
+.constructor-remove-button{
+	width: 38px;
+	height: 38px;
+	background-image: url(../public/icons/remove-button.svg);
+}
+
+.mattress-constructor-added-layer{
+	width: 452px;
+	height: 38px;
 }

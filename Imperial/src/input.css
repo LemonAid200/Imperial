@@ -309,3 +309,29 @@ p{
 	background-repeat: no-repeat;
 	background-position: 143px 23px;
 }
+
+.mattress-constructor-added-layer{
+	width: 452px;
+	height: 38px;
+}
+
+.w4-constructor-wrapper{
+	min-height: 480px;
+}
+
+.constructor-move-button{
+	width: 38px;
+	height: 38px;
+	background-image: url(../public/icons/move-button.svg);
+}
+
+.constructor-remove-button{
+	width: 38px;
+	height: 38px;
+	background-image: url(../public/icons/remove-button.svg);
+}
+
+.mattress-constructor-added-layer{
+	width: 452px;
+	height: 38px;
+}

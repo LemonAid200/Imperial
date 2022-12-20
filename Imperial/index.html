@@ -8,8 +8,8 @@
 	<title>Imperial</title>
 </head>
 <body>
-	<div class="wrapper-main w-screen h-fit">
-		<div class="wrapper-1 h-fit lg:wrapper-1">
+	<div class="wrapper-main w-screen lg:h-fit">
+		<div class="h-screen lg:wrapper-1">
 			<header class="head flex mx-6  h-24 items-center" style="justify-content: space-between;">
 				<img class="h-28 w-28 mt-1" src="public/icons/Group.svg" alt="">
 				<div class="menu">
@@ -38,10 +38,10 @@
 				<p class="max-w-lg my-5">Подберите для себя матрас индивидуально по выгодной цене и дизайну на нашем онлайн-конструкторе прямо сейчас!</p>
 				<button class="choose-mattress-button  max-w-fit float-right px-2
 				 text-white mt-11 md:mt-5 md:float-left">Подобрать матрас</button>
-				<button class="mouse-iconed-button my-20 flex"> <img src="public/icons/mouse.svg" alt=""><span class="ml-3">Подробнее</span></button>
+				<button class="mouse-iconed-button my-12 flex"> <img src="public/icons/mouse.svg" alt=""><span class="ml-3">Подробнее</span></button>
 			</div>
-	
 		</div>
+
 		<div class="wrapper-2 py-10 text-white">
 			<div class="flex relative md:ml-20 md:pl-20 items-center">
 				<div class="wrapper-2-line hidden absolute top-7 left-0 w-16 h-1 bg-white border-spacing-0 rounded-sm md:block"></div>
@@ -294,7 +294,7 @@
 	
 		</div>
 
-		<div class="wrapper-4 min-h-fit bg-slate-600">
+		<div class="wrapper-4 min-h-fit">
 			<div class="text-intro mt-3 mb-6 relative flex md:ml-20 md:pl-20 items-center">
 				<div class="wrapper-3-line absolute left-2 top-7 w-12 h-1 rounded-sm hidden md:block"></div>
 				<div class="wrapper-3-title px-3">
@@ -309,7 +309,7 @@
 						<button class="wrapper-4-standart-button">Стандартный</button>
 						<button class="wrapper-4-sizing-button">Заказной размер</button>
 					</div>
-					<button class="wrapper-3-howitworks-button float-right"><p>Как это работает?</p></button>
+					<button class="wrapper-3-howitworks-button float-right hidden md:block"><p>Как это работает?</p></button>
 				</div>
 					
 				<div class="w4-constructor-wrapper">
@@ -326,13 +326,26 @@
 									<option value="190sm">190см</option>
 								</select>
 							</div>
-							div.mattress-constructor-set-
+							<div class="mattress-constructor-set-composition flex">
+								<img src="public/icons/stack.svg" alt="">
+								<p>Выберите состав матраса</p>
+							</div>
+							<div class="mattress-constructor-added-layer w-screen">
+								<button class="constructor-move-button"></button>
+								<div class="constructor-added-layer-info flex">
+									<span>Чехол</span>
+									<span>Bamboo</span>
+									<span class="flex">3510 <img src="public/icons/ruble.svg" alt=""></span>
+								</div>
+								<button class="constructor-remove-button"></button>
+							</div>
 						</div>
 						<div class="mattress-constructor-visualisation">
 							<p>Визуализация слоев матраса</p>
 							</div>
 					</div>
 				</div>
+				<button class="wrapper-3-howitworks-button float-left md:hidden"><p>Как это работает?</p></button>
 				
 
 			</div>

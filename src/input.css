@@ -46,7 +46,7 @@ p{
 
 
 @media (min-width: 1024px) {
-  .lg\:wrapper-1{
+  .lg\:wrapper-1-img{
 		background-image: url(../public/backgrounds/sleeping-lady.png);
 		background-repeat: no-repeat;
 		/* background-size: 100%; */

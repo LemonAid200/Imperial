@@ -688,6 +688,21 @@ video {
   width: 12rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.min-w-fit {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -855,7 +870,7 @@ p{
 } */
 
 @media (min-width: 1024px) {
-  .lg\:wrapper-1{
+  .lg\:wrapper-1-img{
     background-image: url(../public/backgrounds/sleeping-lady.png);
     background-repeat: no-repeat;
     /* background-size: 100%; */
@@ -1152,6 +1167,21 @@ p{
   height: 38px;
 }
 
+@media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:relative {
     position: relative;
@@ -1172,6 +1202,10 @@ p{
 
   .md\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .md\:ml-3 {
+    margin-left: 0.75rem;
   }
 
   .md\:block {
@@ -1202,6 +1236,21 @@ p{
 
   .md\:pl-20 {
     padding-left: 5rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

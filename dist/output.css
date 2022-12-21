@@ -521,6 +521,14 @@ video {
   position: relative;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .top-7 {
   top: 1.75rem;
 }
@@ -535,14 +543,6 @@ video {
 
 .top-52 {
   top: 13rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .float-right {
@@ -563,9 +563,9 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mx-24 {
@@ -581,26 +581,6 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.my-40 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-.my-28 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-}
-
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .mt-1 {
@@ -643,14 +623,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mr-auto {
-  margin-right: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
 .flex {
   display: flex;
 }
@@ -659,9 +631,8 @@ video {
   display: none;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-screen {
+  height: 100vh;
 }
 
 .h-24 {
@@ -682,10 +653,6 @@ video {
 
 .h-1 {
   height: 0.25rem;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .min-h-fit {
@@ -709,21 +676,16 @@ video {
   width: 1rem;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-16 {
   width: 4rem;
 }
 
 .w-48 {
   width: 12rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.min-w-fit {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 
 .max-w-md {
@@ -885,9 +847,15 @@ p{
   line-height: 150%;
 }
 
+/* @media (min-height: 400px){
+.md\:text-6xl {
+    font-size: 1.75rem;
+    line-height: 1;
+	}
+} */
+
 @media (min-width: 1024px) {
   .lg\:wrapper-1{
-    min-height: 900px;
     background-image: url(../public/backgrounds/sleeping-lady.png);
     background-repeat: no-repeat;
     /* background-size: 100%; */
@@ -1198,35 +1166,12 @@ p{
     margin-right: 5rem;
   }
 
-  .md\:my-28 {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-  }
-
-  .md\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .md\:my-24 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-  }
-
   .md\:mt-5 {
     margin-top: 1.25rem;
   }
 
   .md\:ml-20 {
     margin-left: 5rem;
-  }
-
-  .md\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
   }
 
   .md\:block {
@@ -1239,11 +1184,6 @@ p{
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .md\:w-96 {
@@ -1262,11 +1202,6 @@ p{
 
   .md\:pl-20 {
     padding-left: 5rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
 
@@ -1289,6 +1224,11 @@ p{
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 

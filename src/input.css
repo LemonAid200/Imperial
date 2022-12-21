@@ -37,11 +37,16 @@ p{
 	line-height: 150%;
 }
 
+/* @media (min-height: 400px){
+.md\:text-6xl {
+    font-size: 1.75rem;
+    line-height: 1;
+	}
+} */
 
 
 @media (min-width: 1024px) {
   .lg\:wrapper-1{
-		min-height: 900px;
 		background-image: url(../public/backgrounds/sleeping-lady.png);
 		background-repeat: no-repeat;
 		/* background-size: 100%; */

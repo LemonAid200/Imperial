@@ -37,12 +37,16 @@ p{
 	line-height: 150%;
 }
 
-/* @media (min-height: 400px){
-.md\:text-6xl {
-    font-size: 1.75rem;
-    line-height: 1;
+@media (max-height: 400px){
+ .w1-t-adaptation{
+		flex-direction: row;
+		margin-bottom: 1px;
+		margin-top: 1px;
 	}
-} */
+	.w1-main-adaptation{
+		margin-top: 5px;
+	}
+}
 
 
 @media (min-width: 1024px) {

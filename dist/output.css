@@ -1220,6 +1220,22 @@ p{
   margin-bottom: 2px;
 }
 
+.add-layer{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #29ABE2;
+}
+
+.mattress-layer-add-remove{
+  margin-top: 17px;
+  border-top: 1px solid#676767ad;
+  border-bottom: 1px solid#676767ad;
+  padding: 10px 0;
+}
+
 @media (min-width: 640px) {
   .sm\:relative {
     position: relative;

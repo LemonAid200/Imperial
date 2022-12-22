@@ -10,7 +10,7 @@
 <body>
 	<div class="wrapper-main w-screen  lg:h-fit">
 		<div class="w1 h-screen min-h-fit relative lg:wrapper-1-img">
-			<header class="head flex mx-6  h-24 items-center" style="justify-content: space-between;">
+			<header class="head flex mx-6  h-24 items-center justify-between">
 				<img class="h-28 w-28 mt-1" src="public/icons/Group.svg" alt="">
 				<div class="menu">
 					<button class="menu-button w-12 h-12 md:hidden"></button>
@@ -33,17 +33,6 @@
 					Заказать звонок
 				</button>
 			</header>
-<<<<<<< HEAD
-			<div class="w1-title-1 flex flex-col mt-14 ml-3 2xl:ml-56">
-				<div class="w1-title mx-auto md:ml-3">
-					<h1 class="text-3xl md:text-6xl lg:title-1">Ортопедические матрасы для отдыха с комфортом</h1>
-					<p class="max-w-lg my-5 md:text-xl">Подберите для себя матрас индивидуально по выгодной цене и дизайну на нашем онлайн-конструкторе прямо сейчас!</p>
-				</div>
-				<div class="w1-buttons flex flex-col w-44 absolute right-0 bottom-0 mx-auto md:ml-3 lg:relative">
-					<button class="choose-mattress-button  max-w-fit float-right px-2
-					text-white mt-11 md:mt-5 md:float-left">Подобрать матрас</button>
-				 <button class="mouse-iconed-button my-12 flex"> <img src="public/icons/mouse.svg" alt=""><span class="ml-3">Подробнее</span></button> 
-=======
 			<div class="title-1 flex flex-col mt-2 md:mt-2 w1-main-adaptation ml-3 2xl:ml-56">
 				<div class="w1-title mx-auto md:ml-3">
 					<h1 class="text-3xl max-w-md lg:text-6xl lg:title-1">Ортопедические матрасы для отдыха с комфортом</h1>
@@ -53,7 +42,6 @@
 					<button class="choose-mattress-button  min-w-fit float-right px-2
 					text-white md:mt-5 md:float-left mr-3">Подобрать матрас</button>
 				 <button class="mouse-iconed-button my-4 md:my-6 lg:my-12 flex"> <img src="public/icons/mouse.svg" alt=""><span class="ml-3">Подробнее</span></button> 
->>>>>>> af65e6210127fb2639d79a621cd8490431e2da5c
 				</div>
 			</div>
 		</div>
@@ -331,32 +319,71 @@
 				<div class="w4-constructor-wrapper">
 					<div class="mattress-constructor flex justify-between">
 						<div class="mattress-constructor-kit">
-							<div class="mattress-constructor-set-sizes flex">
+							<div class="mattress-constructor-set-sizes flex my-6 ml-4 md:ml-8">
 								<img src="public/icons/ruler.svg" alt="">
-								<p>Задайте размер</p>
+								<p class="ml-2 mr-4">Задайте размер</p>
 								<select class="custom-select-size-constructor" name="" id="">
 									<option value="80sm">80см</option>
 								</select>
-								<p>x</p>
+								<p class="mx-2">x</p>
 								<select class="custom-select-size-constructor" name="" id="">
 									<option value="190sm">190см</option>
 								</select>
 							</div>
-							<div class="mattress-constructor-set-composition flex">
+							<div class="mattress-constructor-set-composition flex my-6 ml-4 md:ml-8">
 								<img src="public/icons/stack.svg" alt="">
-								<p>Выберите состав матраса</p>
+								<p class="ml-2">Выберите состав матраса</p>
 							</div>
-							<div class="mattress-constructor-added-layer w-screen">
+							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
 								<button class="constructor-move-button"></button>
-								<div class="constructor-added-layer-info flex">
-									<span>Чехол</span>
-									<span>Bamboo</span>
-									<span class="flex">3510 <img src="public/icons/ruble.svg" alt=""></span>
+								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
+									<p>Чехол</p>
+									<p>Bamboo</p>
+									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
+								</div>
+								<button class="constructor-remove-button"></button>
+							</div>
+							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+								<button class="constructor-move-button"></button>
+								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
+									<p>Чехол</p>
+									<p>Bamboo</p>
+									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
+								</div>
+								<button class="constructor-remove-button"></button>
+							</div>	
+							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+								<button class="constructor-move-button"></button>
+								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
+									<p>Чехол</p>
+									<p>Bamboo</p>
+									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
+								</div>
+								<button class="constructor-remove-button"></button>
+							</div>
+							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+								<button class="constructor-move-button"></button>
+								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
+									<p>Чехол</p>
+									<p>Bamboo</p>
+									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
+								</div>
+								<button class="constructor-remove-button"></button>
+							</div>	
+							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+								<button class="constructor-move-button"></button>
+								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
+									<p>Чехол</p>
+									<p>Bamboo</p>
+									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
 								</div>
 								<button class="constructor-remove-button"></button>
 							</div>
 						</div>
-						<div class="mattress-constructor-visualisation">
+
+
+						
+						<div class="mattress-constructor-visualisation min-w-min">
 							<p>Визуализация слоев матраса</p>
 							</div>
 					</div>

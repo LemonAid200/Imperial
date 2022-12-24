@@ -37,7 +37,7 @@ p{
 	line-height: 150%;
 }
 
-@media (max-height: 400px){
+@media (max-height: 420px){
  .w1-t-adaptation{
 		flex-direction: row;
 		margin-bottom: 1px;
@@ -321,7 +321,7 @@ p{
 }
 
 .mattress-constructor-added-layer{
-	width: 452px;
+	width: fit-content;
 	height: 38px;
 }
 
@@ -333,12 +333,16 @@ p{
 	width: 38px;
 	height: 38px;
 	background-image: url(../public/icons/move-button.svg);
+	background-repeat: no-repeat;
+	background-position-x: center;
 }
 
 .constructor-remove-button{
 	width: 38px;
 	height: 38px;
 	background-image: url(../public/icons/remove-button.svg);
+	background-repeat: no-repeat;
+	background-position-x: center;
 }
 
 .mattress-constructor-added-layer{
@@ -359,7 +363,32 @@ p{
 
 .mattress-layer-add-remove{
 	margin-top: 17px;
-	border-top: 1px solid#676767ad;
-	border-bottom: 1px solid#676767ad;
+	margin-bottom: 17px;
+	border-top: 1px solid#6767672e;
+	border-bottom: 1px solid#6767672e;
 	padding: 10px 0;
+}
+
+.constructor-added-layer-info{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 141px 2fr 1fr;
+}
+
+.layer-name{
+	max-width: fit-content;
+}
+
+.layer-property{
+	max-width: fit-content;
+
+}
+
+.layer-price{
+	max-width: fit-content;
+
+}
+
+.wrapper-4-button-box{
+	max-width: 100vw;
 }

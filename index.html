@@ -317,9 +317,9 @@
 				</div>
 					
 				<div class="w4-constructor-wrapper">
-					<div class="mattress-constructor flex justify-between">
-						<div class="mattress-constructor-kit">
-							<div class="mattress-constructor-set-sizes flex my-6 ml-4 md:ml-8">
+					<div class="mattress-constructor flex">
+						<div class="mattress-constructor-kit px-2 md:px-7">
+							<div class="mattress-constructor-set-sizes flex my-6">
 								<img src="public/icons/ruler.svg" alt="">
 								<p class="ml-2 mr-4">Задайте размер</p>
 								<select class="custom-select-size-constructor" name="" id="">
@@ -330,72 +330,78 @@
 									<option value="190sm">190см</option>
 								</select>
 							</div>
-							<div class="mattress-constructor-set-composition flex my-6 ml-4 md:ml-8">
+							<div class="mattress-constructor-set-composition flex my-6">
 								<img src="public/icons/stack.svg" alt="">
 								<p class="ml-2">Выберите состав матраса</p>
 							</div>
-							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+							<div class="mattress-constructor-added-layer flex min-w-full ">
 								<button class="constructor-move-button"></button>
-								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
-									<p>Чехол</p>
-									<p>Bamboo</p>
-									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
+								<div class="constructor-added-layer-info items-center px-5 w-fit">
+									<p class="layer-name">Чехол</p>
+									<p class="layer-property">Bamboo</p>
+									<p class="layer-price flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
 								</div>
 								<button class="constructor-remove-button"></button>
 							</div>
-							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+							<div class="mattress-constructor-added-layer flex min-w-full">
 								<button class="constructor-move-button"></button>
-								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
-									<p>Чехол</p>
-									<p>Bamboo</p>
+								<div class="constructor-added-layer-info items-center px-5 w-96">
+									<p>Войлок термо</p>
+									<p>0,5 см</p>
 									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
 								</div>
 								<button class="constructor-remove-button"></button>
 							</div>	
-							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+							<div class="mattress-constructor-added-layer flex min-w-full">
 								<button class="constructor-move-button"></button>
-								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
-									<p>Чехол</p>
-									<p>Bamboo</p>
+								<div class="constructor-added-layer-info items-center px-5 w-96">
+									<p>Пружинный блок</p>
+									<p>256 шт/м²</p>
 									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
 								</div>
 								<button class="constructor-remove-button"></button>
 							</div>
-							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+							<div class="mattress-constructor-added-layer flex min-w-full">
 								<button class="constructor-move-button"></button>
-								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
-									<p>Чехол</p>
-									<p>Bamboo</p>
+								<div class="constructor-added-layer-info items-center px-5 w-96">
+									<p>Латекс</p>
+									<p>1 см</p>
 									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
 								</div>
 								<button class="constructor-remove-button"></button>
 							</div>	
-							<div class="mattress-constructor-added-layer flex min-w-full mx-7">
+							<div class="mattress-constructor-added-layer flex min-w-full">
 								<button class="constructor-move-button"></button>
-								<div class="constructor-added-layer-info flex flex-row items-center justify-between px-5 w-96">
-									<p>Чехол</p>
-									<p>Bamboo</p>
+								<div class="constructor-added-layer-info items-center px-5 w-96">
+									<p>Пенополиуритан</p>
+									<p>2 см</p>
 									<p class="flex items-center h-3">3510 <img src="public/icons/ruble.svg" alt=""></p>
 								</div>
 								<button class="constructor-remove-button"></button>
 							</div>
-							<div class="mattress-layer-add-remove flex justify-between mx-7 my-">
-								<button class="add-layer flex">
+							<div class="mattress-layer-add-remove flex justify-between">
+								<button class="add-layer flex content-between items-center">
 									Добавить слой
-									<img src="public/icons/plus-add-layer.svg" alt="">
+									<img class="ml-1" src="public/icons/plus-add-layer.svg" alt="">
 								</button>
-								<button class="remove-all-layers flex">
+								<button class="remove-all-layers flex content-between items-center">
 									Сбросить всё
-									<img src="public/icons/delete-all-layers-cross.svg" alt="">
+									<img class="ml-1" src="public/icons/delete-all-layers-cross.svg" alt="">
 								</button>
 							</div>
 						</div>
-
-
-						
+					
 						<div class="mattress-constructor-visualisation min-w-min">
 							<p>Визуализация слоев матраса</p>
+							<div class="visualistaion-layers flex flex-col bg-red-400">
+								<img src="public/mattress_visualistaion/cover_top1.png" alt="">
+								<img src="" alt="">
+								<img src="" alt="">
+								<img src="" alt="">
+								<img src="" alt="">
+								<img src="" alt="">
 							</div>
+						</div>
 					</div>
 				</div>
 				<button class="wrapper-3-howitworks-button float-left md:hidden"><p>Как это работает?</p></button>

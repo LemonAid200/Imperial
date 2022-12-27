@@ -653,8 +653,16 @@ video {
   margin-left: 0.25rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .hidden {
@@ -931,6 +939,12 @@ p{
   .lg\:title-1{
     max-width: 40rem;
   }
+
+  .lg\:w5-img{
+    background-image: url(../public/backgrounds/circle-bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
 }
 
 .menu-button{
@@ -1125,10 +1139,6 @@ p{
   margin: 10px auto;
 }
 
-.wrapper-5{
-  background: 	rgba(250, 250, 250, 1);
-}
-
 .wrapper-4-standart-button{
   background: #29ABE2;
   /* background: red; */
@@ -1217,6 +1227,10 @@ p{
   background-position-x: center;
 }
 
+.mattress-constructor-kit{
+  max-width: 100vw;
+}
+
 .mattress-constructor-added-layer{
   width: 452px;
   height: 38px;
@@ -1270,6 +1284,14 @@ p{
   height: 89px;
   width: 9px;
   margin-left: 9px;
+}
+
+.w5-perks{
+  max-width: 270px;
+}
+
+.wrapper-5{
+  background: #FAFAFA;
 }
 
 @media (min-width: 640px) {
@@ -1397,3 +1419,4 @@ p{
     margin-left: 14rem;
   }
 }
+

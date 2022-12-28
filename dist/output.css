@@ -939,11 +939,59 @@ p{
   .lg\:title-1{
     max-width: 40rem;
   }
+}
 
-  .lg\:w5-img{
-    background-image: url(../public/backgrounds/circle-bg.png);
+@media (min-width: 1300px){
+  .wrapper-main .lg\:w5-img{
+    background: #FAFAFA;
+    background-image: url(../public/backgrounds/sofa-bg.png) , url(../public/backgrounds/circle-bg.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-size:  auto;
+    background-position: right bottom, right;
+    min-height: 609px;
+    animation: changeBg 15s ease-out infinite;
+  }
+
+  @keyframes changeBg{
+    0%,100%  {
+      background-image: url(../public/backgrounds/sofa-bg.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    10% {
+      background-image: url(../public/backgrounds/Header-Image\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    20% {
+      background-image: url(../public/backgrounds/Header-Image\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    30% {
+      background-image: url(../public/backgrounds/bedbase_5ft_14i_2\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    40% {
+      background-image: url(../public/backgrounds/bedbase_5ft_14i_2\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    50% {
+      background-image: url(../public/backgrounds/jada-mattress-7-edit\ копия\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    60% {
+      background-image: url(../public/backgrounds/jada-mattress-7-edit\ копия\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    70% {
+      background-image: url(../public/backgrounds/no-background-bigger\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    80% {
+      background-image: url(../public/backgrounds/no-background-bigger\ 1.png) , url(../public/backgrounds/circle-bg.png);
+    }
+
+    90%  {
+      background-image: url(../public/backgrounds/sofa-bg.png) , url(../public/backgrounds/circle-bg.png);
+    }
   }
 }
 

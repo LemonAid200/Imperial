@@ -743,6 +743,10 @@ video {
   width: 24rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
@@ -816,6 +820,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -1342,6 +1356,21 @@ p{
   background: #FAFAFA;
 }
 
+.review-card{
+  text-align: -webkit-center;
+  width: 270px;
+  background: #FFFFFF;
+  margin: 15px;
+  padding: 23px 32px 23px 25px;
+  box-shadow: 0px 2px 16px rgba(85, 156, 255, 0.08);
+}
+
+.map{
+  background-image: url(../public/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 640px) {
   .sm\:relative {
     position: relative;
@@ -1467,4 +1496,3 @@ p{
     margin-left: 14rem;
   }
 }
-

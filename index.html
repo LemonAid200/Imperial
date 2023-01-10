@@ -479,7 +479,7 @@
 		</div>
 
 		<div class="w7 flex flex-wrap">
-			<div class="contacts  w-screen   xl:w-1/2">
+			<div class="contacts  w-screen   map-contacts-adaptation">
 				<div class="text-intro mt-3 mb-6 relative flex md:ml-20 md:pl-20 items-center">
 					<div class="wrapper-7-line absolute left-2 top-7 w-12 h-1 rounded-sm hidden md:block"></div>
 					<div class="wrapper-3-title px-3">
@@ -495,41 +495,47 @@
 					</div>
 				</div>
 			</div>
-			<div class="map w-screen xl:w-1/2">
+			<div class="map w-screen map-contacts-adaptation">
 				<img class="mx-auto" src="./public/map.png" alt="">
 			</div>
 		</div>
-		<footer class="foot flex px-6 py-4 h-24 items-center justify-between">
-			<img class="h-28 w-28 mt-1" src="public/icons/Group.svg" alt="">
-			<div class="footer-menu">
-				<button class="menu-button w-5 h-12 md:hidden"></button>
-				<ul class=" hidden text-left md:grid grid-cols-2 lg:space-x-2">
-					<li><a href="#"> Матрасы			</a></li>
-					<li><a href="#"> О продукции	</a></li>
-					<li><a href="#"> Доставка			</a></li>
-					<li><a href="#"> Гарантии			</a></li>
-					<li><a href="#"> Отзывы				</a></li>
-					<li><a href="#"> Адреса магазинов</a></li>
-					<li><a href="#"> Партнерам		</a></li>
-					<li><a href="#"> Контакты			</a></li>
-				</ul>
+		<footer class="foot ">
+
+			<div class="footer-main foot flex px-6 py-4 items-center justify-between">
+				<img class="h-28 w-28 mt-1" src="public/icons/Group.svg" alt="">
+				<div class="footer-menu">
+					<button class="menu-button w-5 h-12 md:hidden"></button>
+					<ul class=" hidden text-left md:grid grid-cols-2">
+						<li><a href="#"> Матрасы			</a></li>
+						<li><a href="#"> О продукции	</a></li>
+						<li><a href="#"> Доставка			</a></li>
+						<li><a href="#"> Гарантии			</a></li>
+						<li><a href="#"> Отзывы				</a></li>
+						<li><a href="#"> Адреса магазинов</a></li>
+						<li><a href="#"> Партнерам		</a></li>
+						<li><a href="#"> Контакты			</a></li>
+					</ul>
+				</div>
+				<div class="adresses">
+					<p>Адреса салонов:</p>
+					<ul>
+						<li>ул.Красный проспект д. 99 (салон "Матрасы & Кровати")</li>
+						<li>пр.Дзержинского д. 1/4 (салон "Дюна" 3 этаж)</li>
+						<li>ул.Гоголя д. 14 (салон "Все для сна")</li>
+						<li>c.Сокур, ул. Советская д. 80 (Станция Комфорта)</li>
+					</ul>
+				</div>
+				<div class="phone-footer flex flex-col">
+					<div class="phone flex space-x-2 ">
+						<img class="w-4 h-4"	src="public/icons/Phone.svg" alt="phone">
+						<a class="min-w-max" href="tel:2296666">229-66-66</a>
+					</div>
+					<button class="p-2 button-call hidden xl:block">
+						Заказать звонок
+					</button>
+				</div>
 			</div>
-			<div class="adresses">
-				<p>Адреса салонов:</p>
-				<ul>
-					<li>ул.Красный проспект д. 99 (салон "Матрасы & Кровати")</li>
-					<li>пр.Дзержинского д. 1/4 (салон "Дюна" 3 этаж)</li>
-					<li>ул.Гоголя д. 14 (салон "Все для сна")</li>
-					<li>c.Сокур, ул. Советская д. 80 (Станция Комфорта)</li>
-				</ul>
-			</div>
-			<div class="phone flex space-x-2 ">
-				<img class="w-4 h-4"	src="public/icons/Phone.svg" alt="phone">
-				<a class="min-w-max" href="tel:2296666">229-66-66</a>
-			</div>
-			<button class="p-2 button-call hidden xl:block">
-				Заказать звонок
-			</button>
+			<p class="text-center">Все права защищены. 2020. Империа-Л.</p>
 		</footer>
 	</div>
 

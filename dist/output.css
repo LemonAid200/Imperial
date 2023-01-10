@@ -983,6 +983,12 @@ p{
   }
 }
 
+@media (min-width: 1400px){
+  .map-contacts-adaptation {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1300px){
   .wrapper-main .lg\:w5-img{
     background: #FAFAFA;
@@ -1405,7 +1411,7 @@ p{
 
 footer{
   background: #0F4861;
-  height: 120px;
+  height: 220px;
 }
 
 .wrapper-7-line{
@@ -1566,10 +1572,6 @@ footer{
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
-  }
-
-  .xl\:w-1\/2 {
-    width: 50%;
   }
 }
 

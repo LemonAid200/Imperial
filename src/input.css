@@ -467,7 +467,7 @@ p{
 
 footer{
 	background: #0F4861;
-	height: 220px;
+	height: max-content;
 }
 
 .wrapper-7-line{
@@ -505,4 +505,6 @@ footer{
 
 .footer-menu{
 	color: #79A0B0;
+	height: fit-content;
+	padding-bottom: 10px;
 }
